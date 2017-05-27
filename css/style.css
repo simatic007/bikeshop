@@ -1,0 +1,593 @@
+body{
+    background: #ececec;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    color: #000;
+    min-width: 320px;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+h3{
+    font-size: 24px;
+    font-weight: 700;
+}
+.btn-red{
+    color:  #fcff19;
+    background: #000;
+}
+.btn-red:hover{
+    color:  #000;
+    background: #fcff19;
+    transition: all .5s;
+}
+
+/* =============================header============================== */
+
+.flag{
+    margin-right: 5px;
+    position: relative;
+    top: -1px;
+}
+.menu-carousel .item{
+    min-height: 600px;
+}
+.menu-carousel .bgslide{
+    background-size: cover;
+    background-position: center center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel.fade{
+    opacity: 1;
+}
+.carousel.fade .item{
+    opacity: 0;
+    transition: opacity .5s;
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.carousel.fade .item.active{
+    opacity: 1;
+    position: relative;
+    z-index: 2;
+}
+
+.menu-carousel .carousel-caption{
+    left: 20%;
+    top: 170px;
+}
+.menu-carousel .carousel-caption h1{
+    font-weight: 700;
+    font-size: 50px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.menu-carousel .carousel-caption h3{
+    font-size: 28px;
+    font-weight:100;
+    margin-bottom: 40px;
+}
+.info__text{
+    color: #fcff19;
+}
+.menu-carousel .carousel-caption .btn-red{
+    padding: 15px 25px;
+    border-radius: 5px;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+.menu-carousel .carousel-caption .btn-red{
+    text-decoration: none;
+}
+.menu-carousel .container{
+    position: relative;
+}
+.menu-carousel .carousel-control{
+    z-index: 10;
+}
+
+.carousel-indicators-wrap{
+    position: absolute;
+    width: 100%;
+    bottom: -25px;
+    text-align: center;
+}
+.carousel-indicators-wrap .carousel-indicators{
+    margin-left: 0;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    display: inline-block;
+    background: transparent;
+    width: 100%;
+    padding: 5px 0px;
+}
+.carousel-indicators-wrap .carousel-indicators li{
+    background: transparent;
+    border: none;
+    width: 19%;
+    height: 4px;
+    margin: 4px 0px;
+
+}
+.carousel-indicators-wrap .carousel-indicators li.active{
+    background: #fcff19;
+    display: inline-block;
+}
+.carousel-indicators-wrap .carousel-indicators li:first-child{
+    margin-left: 0;
+}
+.carousel-indicators-wrap .carousel-indicators li:last-child{
+    margin-right: 0;
+}
+
+.main-menu .navbar-inverse{
+    background: transparent;
+    border: none;
+}
+.main-menu{
+    position: absolute;
+    z-index: 21;
+    width: 100%;
+    top: 30px;
+}
+.main-menu-bg{
+    background: transparent;
+    margin-left:20%;
+}
+.main-menu .navbar-inverse .navbar-nav > li > a{
+    color: #fff;
+    font-size: 15px;
+    transition: background .5s;
+    font-weight: bold;
+}
+.main-menu .navbar-inverse .navbar-nav > li > a:hover{
+    text-decoration: none;
+    background-color: #fcff19;
+    color: #000;
+    border-radius:5px;
+
+}
+.menu-carousel .main-menu .navbar-brand{
+    padding: 0;
+    margin-left: 15px;
+}
+.main-menu .navbar-brand img{
+    float: left;
+}
+.main-menu .navbar-brand span{
+    display: inline-block;
+    padding: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+}
+.navbar-collapse{
+    float: right;
+    margin-right:10%;
+}
+.dropdown-menu{
+    background-color: #fcff19;
+}
+.dropdown-menu > li > a{
+    font-weight: bold;
+    background-color: #fcff19;
+}
+.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:focus, .navbar-inverse .navbar-nav > .open > a:hover {
+    color: #000!important;
+    background-color: #fcff19;
+    border-radius: 5px;
+}
+.dropdown:hover > .dropdown-menu {
+    display: block;
+}
+/*------------------main------------------*/
+.main{
+    background-image: url(../img/category-background.jpg);
+    background-position: top center;
+    
+}
+.categories__header{
+    font-size:28px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 70px auto;
+    text-align: center;
+}
+.categories__item{
+    position: relative;
+}
+
+.categories__item:hover .category__item__link{
+    opacity: 1;
+    transition: all .5s;
+}
+.category__info__wrap{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right:0;
+    bottom: 0;
+    display: block;
+    text-align: center;
+    width:100%;
+}
+.category__name{
+    color: #fcff19;
+    text-transform: uppercase;
+    font-weight: bold;
+    width:100%;
+    font-size:15px;
+    margin:0 0 15px 0 ;
+    padding:0;
+}
+.category__info{
+    color: #fff;
+    font-size:16px;
+    font-weight:100;
+    width:100%;
+    margin-bottom: 30px;
+    padding:0;
+}
+.link__wrapper{
+    width: 100%;
+    height:50px;
+    position: absolute;
+    bottom: 10px;
+
+}
+.category__item__link{
+    font-size: 12px;
+    color: #fff;
+    border:3px solid white;
+    padding:10px 15px;
+    border-radius: 10px;
+    opacity: 0;
+    text-transform: uppercase;
+
+}
+.category__item__link:hover{
+    color: #fff;
+    text-decoration: none;
+}
+
+/*---------popular bikes----------*/
+.popular__bikes__section{
+    background-color: #fff;
+}
+.popular__bikes__bottom{
+
+}
+.popular__bikes__left{
+    float: left;
+    margin-left: 10px;
+}
+.popular__bikes__right{
+    float: right;
+}
+.bike__name{
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.bike__price{
+    font-weight:100;
+}
+.dropdown__bike__option{
+    display: inline-block;
+}
+.btn-default{
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+}
+.buy__bike{
+    color:white;
+    padding: 9px 20px;
+    border-radius: 5px;
+    font-size: 12px;
+    text-transform: uppercase;
+    background-color: #b7b7b7;
+}
+.buy__bike:hover{
+    color: #000;
+    background-color: #fcff19;
+    transition: all.5s;
+}
+.bike__foto{
+    margin-bottom:10px;
+}
+.bike__foto:hover {
+    outline: 1px solid #b7b7b7;
+
+}
+
+/*----------------contact__form----------------------------*/
+.contact__form{
+    background-image: url(../img/contact-form-bg.jpg);
+    background-position: top center;
+}
+.contact__form__text{
+    text-align: center;
+}
+.btn_send{
+    width: 100%;
+    margin-top:15px;
+    margin-bottom:80px;
+    background-color: #b7b7b7;
+    color: #fff;
+    text-transform: uppercase;
+    font-size:12px;
+    font-weight:bold;
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+    border-radius:10px;
+    padding:15px !important;
+    border:none;
+}
+.btn_send:hover {
+    color: #000;
+    background-color: #fcff19;
+    transition: all .5s;
+}
+/*-------------footer-------------------*/
+footer{
+    background-color: #fcff19;
+}
+.footer__pic{
+    margin-top:20px;
+    margin-left:30px;
+}
+.footer__list{
+    font-size:13px;
+    margin: 30px auto;
+    list-style: none;
+}
+.footer__list__item{
+    display: inline-block;
+    padding:0 20px;
+}
+.footer__list__link{
+    text-transform: uppercase;
+    color: #000;
+    font-weight: bold;
+    padding:10px;
+    -webkit-padding:0px;
+}
+.footer__list__link:hover{
+    color: #fff;
+    text-decoration: none;
+    background-color: #000;
+    padding:10px;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+    .menu-top .navbar-nav,
+    .main-menu .navbar-nav{
+        float: none !important;
+    }
+    .menu-carousel .carousel-caption{
+        left: 20%;
+    }
+    .main-menu .navbar-form{
+        /*margin-left: 125px;*/
+        background: rgba(0, 0, 0, 0.5);
+        margin: 0;
+        padding: 15px;
+        position: absolute;
+        right: 15px;
+        display: none;
+    }
+    .search{
+        display: block;
+    }
+    .sidebar .carousel,
+    .sidebar .banner{
+        margin-right: 10px;
+    }
+    .social-icons img{
+        display: block;
+        margin-bottom: 3px;
+    }
+    .navbar-collapse{
+        float: right;
+        margin-right:0;
+    }
+    .link__wrapper{
+        width: 100%;
+        height:50px;
+        position: absolute;
+        bottom: 0px;
+
+    }
+    .footer__list__item{
+        padding:0!important;
+    }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+    .menu-carousel .carousel-caption h1{
+        font-size: 40px;
+    }
+    .menu-carousel .carousel-caption h3{
+        font-size: 22px;
+    }
+    .main-menu .navbar-inverse .navbar-nav > li > a{
+        font-size: 12px;
+    }
+    .sidebar{
+        padding-bottom: 0;
+        padding-top: 0;
+        border-right: none;
+    }
+    .sidebar .carousel,
+    .sidebar .banner{
+        margin-right: 0;
+    }
+    .bottom-content .form-inline{
+        margin-top: 20px;
+    }
+    .footer-menu ul li a{
+        display: block;
+    }
+    .social-icons img{
+        display: inline;
+        margin-bottom: 0;
+    }
+    .pay{
+        text-align: left;
+    }
+    .popular__bikes__right{
+        float: left;
+    }
+    .footer__pic{
+        display: block;
+        margin: 0 auto;
+    }
+    .footer__list{
+        margin-left:0;
+        text-align: center;
+    }
+    .category__info__wrap{
+        position: absolute;
+        top: 10%;
+        left: 0;
+        right:0;
+        bottom: 0;
+        display: block;
+        text-align: center;
+        width:100%;
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+    .main-menu .container{
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+}
+@media only screen and (max-width : 767px) {
+    .menu-top .navbar-default .navbar-nav > li > a:hover{
+        background: #eee;
+    }
+    .menu-top .container,
+    .menu-top .navbar-collapse{
+        padding-left: 15px;
+    }
+    .menu-carousel .carousel-caption h1{
+        font-size: 38px;
+    }
+    .menu-carousel .carousel-caption h3{
+        font-size: 20px;
+    }
+    .menu-carousel .carousel-caption .btn-red{
+        padding: 15px 20px;
+        font-size: 16px;
+    }
+    .main-menu .navbar-inverse .navbar-nav > li > a:hover{
+        text-decoration: none;
+        background: #222;
+    }
+    .main-menu .navbar-form{
+        margin: 8px 0;
+    }
+    .main-menu .navbar-brand img{
+        max-height: 50px;
+    }
+    .navbar-collapse {
+        margin-right: 0px;
+        float: left;
+        width: 100%;
+        background-color: #fcff19;
+}
+    .main-menu .navbar-inverse .navbar-nav > li > a{
+        color: #000;
+    }
+    .main-menu .navbar-inverse .navbar-nav > li > a:hover{
+        color: #fff;
+    }
+    .categories__item-pic{
+        display: block;
+        margin:0 auto;
+    }
+    .categories__item{
+        margin-bottom:50px;
+    }
+    .bike__foto{
+        display: block;
+        margin:0 auto;
+    }
+    .popular__bikes__left,.popular__bikes__right{
+        float:none;
+        display: inline-block;
+    }
+    .popular__bikes__right{
+        margin-bottom:30px;
+    }
+    .cotact__form{
+        margin: 0 auto;
+        width: 80%;
+    }
+    .categories__header{
+        margin:35px auto;
+    }
+    .footer__list__item{
+        padding:0 10px;
+    }
+}   
+
+@media only screen and (max-width : 540px) {
+    .sidebar .col-xs-6{
+        width: 100%;
+    }
+    .sidebar .carousel,
+    .sidebar .banner{
+        display: inline-block;
+    }
+    .footer__list{
+        padding-left:0;;
+    }
+    .footer__list__item{
+        display: block;
+        margin-bottom:20px;
+    }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+    .menu-carousel .carousel-caption .btn-red{
+        font-size: 14px;
+    }
+    .main-menu .navbar-toggle.collapsed + .navbar-brand img{
+        max-height: 80px;
+    }
+    .bottom-content{
+        padding: 25px 0;
+    }
+}
+
+@media only screen and (min-width : 1200px) {
+    .main-menu .navbar-form{
+        display: block !important;
+    }
+}
